@@ -8,5 +8,5 @@ export const appRoutes: Route[] = [
     {
         path: 'chat',
         loadComponent: () => import('../pages/chat/chatpage.component').then((x) => x.ChatpageComponent),
-    }
+    },
 ];
