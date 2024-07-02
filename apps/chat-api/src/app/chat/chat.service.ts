@@ -7,14 +7,16 @@ const openai = new OpenAI({
 
 @Injectable()
 export class ChatService {
+    constructor() {}
+
     async postToOpenAI(message : string) : Promise<string> {
         const chatCompletion = await openai.chat.completions.create({
             messages: [{ role: 'user', content: `${message}` }],
             model: 'gpt-3.5-turbo',
           });
 
-        console.log(chatCompletion);
+        console.log(`Response: ${chatCompletion}`);
 
-        return chatCompletion.choices[0].message.content;
+        return JSON.stringify({"content":chatCompletion.choices[0].message.content});
     }
 }

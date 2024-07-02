@@ -1,1 +1,10 @@
-<p>chatpage works!</p>
+<div class="outer">
+    <table>
+        <tr>
+            <td><input id="userInput" type="text" placeholder="Ask me anything" [formControl]="messageToOpenAIControl"></td>
+        </tr>
+        <tr>
+            <td><button id="buttonUserInput" type="button" (click)="sendMessage()">Send</button></td>
+        </tr>
+    </table>
+</div>

@@ -3,3 +3,30 @@
 @tailwind utilities;
 
 /* You can add global styles to this file, and also import other style files */
+#userInput {
+    padding: 10px;
+    border: 1px solid theme(colors.primary.400);
+    width: 700px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#buttonUserInput {
+    padding: 10px;
+    border: 1px solid theme(colors.primary.700);
+    background: theme(colors.primary.500);
+    width: 120px;
+    margin-left: 585px;
+}
+
+.menuItem {
+    padding: 5px;
+    border: 1px solid theme(colors.primary.500);
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.outer {
+    margin-top: 20px;
+    display: block;
+}
